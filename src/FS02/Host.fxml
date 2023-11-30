@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#Move1" onMousePressed="#Move" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FS02.hostController">
+   <children>
+      <TextField fx:id="showIP" editable="false" layoutX="28.0" layoutY="131.0" prefHeight="31.0" prefWidth="198.0" promptText="IP Address" AnchorPane.rightAnchor="74.0" AnchorPane.topAnchor="131.0" />
+      <TextField fx:id="showPort" editable="false" layoutX="28.0" layoutY="185.0" prefHeight="31.0" prefWidth="198.0" promptText="Port" AnchorPane.rightAnchor="74.0" AnchorPane.topAnchor="185.0" />
+      <Text fx:id="confirm" layoutX="58.0" layoutY="283.2939453125" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="184.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="252.0">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Button fx:id="prepServer" layoutX="28.0" layoutY="59.0" mnemonicParsing="false" onAction="#prepServer" prefHeight="25.0" prefWidth="184.0" text="Prepare Server" AnchorPane.rightAnchor="88.0" AnchorPane.topAnchor="59.0" />
+      <Button fx:id="cont" disable="true" layoutX="86.0" layoutY="321.0" mnemonicParsing="false" onAction="#cont" prefHeight="25.0" prefWidth="102.0" text="Continue" />
+      <Button fx:id="EXIT" layoutX="275.0" layoutY="2.0" mnemonicParsing="false" onAction="#exit" text="x" />
+   </children>
+</AnchorPane>

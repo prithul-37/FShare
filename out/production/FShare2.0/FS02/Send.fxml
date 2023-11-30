@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onMouseDragged="#Move1" onMousePressed="#Move" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FS02.sendController">
+   <children>
+      <TextField fx:id="fileName" layoutX="40.0" layoutY="63.0" promptText="File name" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="63.0" />
+      <Button fx:id="select" layoutX="203.0" layoutY="63.0" mnemonicParsing="false" onAction="#selectBtm" prefHeight="78.0" prefWidth="65.0" text="Select" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="63.0" />
+      <TextField fx:id="fileSize" layoutX="43.0" layoutY="116.0" prefHeight="25.0" prefWidth="143.0" promptText="File size" />
+      <Button fx:id="send" layoutX="192.0" layoutY="172.0" mnemonicParsing="false" onAction="#sendBtn" prefHeight="44.0" prefWidth="81.0" text="Send" />
+      <Button fx:id="sendAgain" layoutX="40.0" layoutY="296.0" mnemonicParsing="false" onAction="#sendAgainBtn" prefHeight="51.0" prefWidth="94.0" text="Send Again" />
+      <Button fx:id="Receive" layoutX="162.0" layoutY="296.0" mnemonicParsing="false" onAction="#receiveBtn" prefHeight="51.0" prefWidth="94.0" text="Reveive" />
+      <Text fx:id="status" layoutX="49.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="215.13671875">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <Button fx:id="EXIT" layoutX="275.0" layoutY="2.0" mnemonicParsing="false" onAction="#exit" text="x" />
+      <Button fx:id="sendInfo" layoutX="53.0" layoutY="172.0" mnemonicParsing="false" onAction="#sendInfo" prefHeight="44.0" prefWidth="102.0" text="Send Info" />
+   </children>
+</AnchorPane>

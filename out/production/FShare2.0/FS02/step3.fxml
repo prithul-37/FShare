@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onMouseDragged="#Move1" onMousePressed="#Move" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FS02.step3Controller">
+   <children>
+      <Button fx:id="send" layoutX="116.0" layoutY="138.0" mnemonicParsing="false" onAction="#Send" prefHeight="45.0" prefWidth="69.0" text="Send" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="138.0" />
+      <Button fx:id="receive" layoutX="116.0" layoutY="200.0" mnemonicParsing="false" onAction="#receiveBtn" prefHeight="45.0" prefWidth="69.0" text="Receive" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="200.0" />
+      <Button fx:id="EXIT" layoutX="275.0" layoutY="2.0" mnemonicParsing="false" onAction="#exit" text="x" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="2.0" />
+   </children>
+</AnchorPane>
